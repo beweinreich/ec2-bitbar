@@ -1,4 +1,12 @@
 #!/usr/bin/python
+# <bitbar.title>EC2 SSH</bitbar.title>
+# <bitbar.version>v1.0</bitbar.version>
+# <bitbar.author>Brian Weinreich</bitbar.author>
+# <bitbar.author.github>beweinreich</bitbar.author.github>
+# <bitbar.desc>Lists all EC2 instances by Name, IP, and allow you to SSH in.</bitbar.desc>
+# <bitbar.image>http://www.hosted-somewhere/pluginimage</bitbar.image>
+# <bitbar.dependencies>python</bitbar.dependencies>
+# <bitbar.abouturl>https://github.com/beweinreich/ec2-bitbar</bitbar.abouturl>
 
 import boto3
 
