@@ -30,8 +30,8 @@ for reservation in reservations:
                     ec2_instances.append({'name': name, 'ip': ip, 'key': key_name})
 
 
-sorted = sorted(ec2_instances, key=lambda k: k['name'])
-for item in sorted:
+sorted_by_name = sorted(ec2_instances, key=lambda k: k['name'])
+for item in sorted_by_name:
     bash_command = "ssh param1=-i param2=~/.ssh/%s.pem param3=ubuntu@%s" % (item['key'], item['ip'])
     print "%s | bash=%s" % (item['name'], bash_command)
     print item['ip']
